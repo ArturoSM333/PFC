@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://brcinrxl522f1"]
+
+[ext_resource type="Texture2D" uid="uid://d4nq1uvqgmwv6" path="res://assets/sprites/Backgrounds/untitled folder/twilight-tiles-transformed.png" id="1_okuyg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c1l21"]
+size = Vector2(36, 9)
+
+[node name="Platforms_tutorial" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_okuyg")
+region_enabled = true
+region_rect = Rect2(0, 0, 36, 11)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_c1l21")
+one_way_collision = true

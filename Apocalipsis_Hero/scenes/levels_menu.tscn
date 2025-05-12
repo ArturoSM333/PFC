@@ -1,0 +1,160 @@
+[gd_scene load_steps=13 format=3 uid="uid://0ipikta2mwm5"]
+
+[ext_resource type="Script" path="res://scripts/levels_menu.gd" id="1_rpco6"]
+[ext_resource type="Texture2D" uid="uid://c3fh5horuqyp7" path="res://assets/sprites/Backgrounds/PNG/Battleground1/Bright/sky.png" id="1_tar6d"]
+[ext_resource type="Texture2D" uid="uid://c4mki21wx07x5" path="res://assets/sprites/Backgrounds/PNG/Battleground1/Bright/ruins2.png" id="2_hhfa3"]
+[ext_resource type="PackedScene" uid="uid://bhtxuugu1tv12" path="res://scenes/menu_character.tscn" id="3_cuh18"]
+[ext_resource type="FontFile" uid="uid://cx0di1ohprr2e" path="res://assets/fonts/PixelOperator8.ttf" id="4_kar6p"]
+[ext_resource type="FontFile" uid="uid://b52reryma4pbd" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="5_ow5ky"]
+[ext_resource type="Script" path="res://scripts/tutorial_2.gd" id="5_wyluk"]
+[ext_resource type="Script" path="res://scripts/level_2_2.gd" id="7_kmc2n"]
+[ext_resource type="Script" path="res://scripts/level_3_3.gd" id="8_4okww"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ylkeg"]
+size = Vector2(109, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_375i1"]
+size = Vector2(8.5, 596)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_gc6gn"]
+
+[node name="levels_menu" type="Node2D"]
+script = ExtResource("1_rpco6")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 1153.0
+offset_bottom = 654.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_tar6d")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = 1.0
+offset_right = 1153.0
+offset_bottom = 654.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_hhfa3")
+expand_mode = 1
+
+[node name="Back" type="Button" parent="."]
+offset_left = 58.0
+offset_top = 541.0
+offset_right = 226.0
+offset_bottom = 611.0
+theme_override_fonts/font = ExtResource("4_kar6p")
+theme_override_font_sizes/font_size = 23
+text = "Back"
+
+[node name="Indications" type="Label" parent="."]
+offset_left = 137.0
+offset_top = 66.0
+offset_right = 1056.0
+offset_bottom = 115.0
+theme_override_fonts/font = ExtResource("5_ow5ky")
+theme_override_font_sizes/font_size = 35
+text = "Click or approach to the level"
+
+[node name="menu__character" parent="." instance=ExtResource("3_cuh18")]
+position = Vector2(587, 466)
+
+[node name="Levels" type="Node" parent="."]
+
+[node name="Tutorial" type="Button" parent="Levels"]
+offset_left = 157.0
+offset_top = 207.0
+offset_right = 278.0
+offset_bottom = 257.0
+theme_override_fonts/font = ExtResource("4_kar6p")
+theme_override_font_sizes/font_size = 15
+text = "Tutorial"
+metadata/_edit_use_anchors_ = true
+
+[node name="Tutorial2" type="Area2D" parent="Levels"]
+position = Vector2(219, 232)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("5_wyluk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Levels/Tutorial2"]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_ylkeg")
+
+[node name="Level_1" type="Button" parent="Levels"]
+offset_left = 531.0
+offset_top = 206.0
+offset_right = 639.0
+offset_bottom = 256.0
+theme_override_fonts/font = ExtResource("4_kar6p")
+theme_override_font_sizes/font_size = 15
+text = "Level 1"
+
+[node name="Level_1_1" type="Area2D" parent="Levels"]
+position = Vector2(585, 231)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("7_kmc2n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Levels/Level_1_1"]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_ylkeg")
+
+[node name="Level_2" type="Button" parent="Levels"]
+offset_left = 886.0
+offset_top = 202.0
+offset_right = 994.0
+offset_bottom = 252.0
+theme_override_fonts/font = ExtResource("4_kar6p")
+theme_override_font_sizes/font_size = 15
+text = "Level 2
+"
+
+[node name="Level_2_3" type="Area2D" parent="Levels"]
+position = Vector2(940, 230)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("8_4okww")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Levels/Level_2_3"]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_ylkeg")
+
+[node name="Limits" type="Node" parent="."]
+
+[node name="Izq" type="StaticBody2D" parent="Limits"]
+position = Vector2(-56, 29)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limits/Izq"]
+position = Vector2(49, 256)
+shape = SubResource("RectangleShape2D_375i1")
+
+[node name="Drch" type="StaticBody2D" parent="Limits"]
+position = Vector2(1162, 2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limits/Drch"]
+position = Vector2(-7.5, 288)
+shape = SubResource("RectangleShape2D_375i1")
+
+[node name="Suelo" type="StaticBody2D" parent="Limits"]
+position = Vector2(587, 483)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limits/Suelo"]
+shape = SubResource("WorldBoundaryShape2D_gc6gn")
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Levels/Tutorial" to="." method="_on_tutorial_pressed"]
+[connection signal="body_entered" from="Levels/Tutorial2" to="Levels/Tutorial2" method="_on_body_entered"]
+[connection signal="pressed" from="Levels/Level_1" to="." method="_on_level_1_pressed"]
+[connection signal="body_entered" from="Levels/Level_1_1" to="Levels/Level_1_1" method="_on_body_entered"]
+[connection signal="pressed" from="Levels/Level_2" to="." method="_on_level_2_pressed"]
+[connection signal="body_entered" from="Levels/Level_2_3" to="Levels/Level_2_3" method="_on_body_entered"]

@@ -1,0 +1,108 @@
+[gd_scene load_steps=12 format=3 uid="uid://cpthxgc2ddjxy"]
+
+[ext_resource type="Script" path="res://scripts/menu_principal.gd" id="1_s86un"]
+[ext_resource type="Texture2D" uid="uid://c53dgv5klaipm" path="res://assets/sprites/Fondos_Menu/buena_calidad.jpg" id="2_i3kvl"]
+[ext_resource type="Theme" uid="uid://gjrl36nl2x6j" path="res://scenes/Default.tres" id="3_04q6x"]
+[ext_resource type="PackedScene" uid="uid://bhtxuugu1tv12" path="res://scenes/menu_character.tscn" id="3_bfgss"]
+[ext_resource type="FontFile" uid="uid://b52reryma4pbd" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_r5uvj"]
+[ext_resource type="FontFile" uid="uid://cx0di1ohprr2e" path="res://assets/fonts/PixelOperator8.ttf" id="5_0l2ic"]
+[ext_resource type="PackedScene" uid="uid://dv41gmotvgexr" path="res://scenes/star.tscn" id="6_23u8m"]
+[ext_resource type="AudioStream" uid="uid://bj5wjb8rgcl2r" path="res://assets/Sounds/Sounds/ChiptuneAdventure.mp3" id="8_vckh1"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3yry4"]
+normal = Vector2(-0.00735274, -0.999973)
+distance = -94.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4pks4"]
+size = Vector2(20, 396)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ctfnv"]
+size = Vector2(25, 424)
+
+[node name="Menu_Principal" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_s86un")
+
+[node name="Fondo" type="TextureRect" parent="."]
+offset_right = 1150.0
+offset_bottom = 645.0
+texture = ExtResource("2_i3kvl")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 32.0
+offset_top = 64.0
+offset_right = 622.0
+offset_bottom = 133.0
+theme_override_fonts/font = ExtResource("3_r5uvj")
+theme_override_font_sizes/font_size = 40
+text = "Apocalipsis Hero"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 73.0
+offset_top = 214.0
+offset_right = 389.0
+offset_bottom = 490.0
+theme_override_constants/separation = -10
+
+[node name="Play_button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_04q6x")
+theme_override_fonts/font = ExtResource("5_0l2ic")
+theme_override_font_sizes/font_size = 25
+text = "Play
+"
+
+[node name="Settings_button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_04q6x")
+theme_override_fonts/font = ExtResource("5_0l2ic")
+theme_override_font_sizes/font_size = 25
+text = "Settings"
+
+[node name="Exit_button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_04q6x")
+theme_override_fonts/font = ExtResource("5_0l2ic")
+theme_override_font_sizes/font_size = 25
+text = "Exit"
+
+[node name="Star" parent="VBoxContainer" instance=ExtResource("6_23u8m")]
+position = Vector2(919, 127)
+
+[node name="StaticBody_bot" type="StaticBody2D" parent="."]
+position = Vector2(572, 644)
+
+[node name="Suelo" type="CollisionShape2D" parent="StaticBody_bot"]
+position = Vector2(5, -91)
+shape = SubResource("WorldBoundaryShape2D_3yry4")
+
+[node name="StaticBody_izq" type="StaticBody2D" parent="."]
+position = Vector2(-14, 442)
+
+[node name="Pared_izq" type="CollisionShape2D" parent="StaticBody_izq"]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_4pks4")
+
+[node name="StaticBody_drch" type="StaticBody2D" parent="."]
+position = Vector2(1165, 437)
+
+[node name="Pared_drch" type="CollisionShape2D" parent="StaticBody_drch"]
+position = Vector2(-1, -1)
+shape = SubResource("RectangleShape2D_ctfnv")
+
+[node name="menu_character" parent="." instance=ExtResource("3_bfgss")]
+position = Vector2(232, 634)
+
+[node name="musica_menu" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_vckh1")
+volume_db = 10.0
+autoplay = true
+bus = &"Music"
+
+[connection signal="pressed" from="VBoxContainer/Play_button" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Settings_button" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit_button" to="." method="_on_exit_button_pressed"]

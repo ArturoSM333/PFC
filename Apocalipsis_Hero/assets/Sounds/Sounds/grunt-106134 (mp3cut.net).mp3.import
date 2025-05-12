@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dirhk8e5hj5ts"
+path="res://.godot/imported/grunt-106134 (mp3cut.net).mp3-7304cb1c56981728991ca641c026828f.mp3str"
+
+[deps]
+
+source_file="res://assets/Sounds/Sounds/grunt-106134 (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/grunt-106134 (mp3cut.net).mp3-7304cb1c56981728991ca641c026828f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
