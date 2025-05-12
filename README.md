@@ -37,7 +37,7 @@
 
 <h2>🔨 Acceso al proyecto 🔨</h2>
 
-- `Fácil acceso: ` Clona el repositorio, instala Godot 4.3, inserta y ejecuta el proyecto  y a jugar.
+- `Fácil acceso:`  Clona el repositorio, instala Godot 4.3, inserta y ejecuta el proyecto  y a jugar.
     
 <h2>🕹️ Funcionalidades del proyecto 🕹️</h2>
  
@@ -53,6 +53,6 @@
 
 <h2>🛠️ Tecnologías utilizadas 🛠️</h2>
  
-- `Godot 4.3`:
+- `Godot 4.3`
 - `IntelliJ IDEA 2024 2.1`
 
