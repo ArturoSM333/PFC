@@ -14,18 +14,21 @@
   <img src="https://github.com/user-attachments/assets/b0632b45-73b0-4c48-947a-a0a8bbc5748b" width="300" alt="Apocalipsis_Hero_Icon" />
 </p>
 
-
+<br><br>
 
 <h2>🗒️ Descripción del proyecto 🗒️</h2>
+<br>
 <p>Embárcate en una aventura épica en Apocalipsis Hero, un Metroidvania con mecánicas fluidas y un mundo vibrante en pixelart.</p>
 <p>Explora un mundo interconectado donde cada rincón guarda secretos y desafíos.</p>
 <p>Domina un conjunto de habilidades versátiles: salta para sortear obstáculos, ataca con precisión para derrotar enemigos, deslízate bajo zonas estrechas y realiza una voltereta ágil para acceder a lugares inaccesibles.</p>
 <p>Cada salto, cada ataque y cada movimiento te acercan más al corazón del mundo que espera ser descubierto.</p>
 <p>¿Tienes lo necesario para explorar cada rincón?</p>
 
+<br><br>
+
 
 <h2>Índice</h2>
-
+<br>
 
 * Título e imagen de portada
 
@@ -44,12 +47,17 @@
 
 * Tecnologías utilizadas
 
+<br><br>
 
 <h2>🔨 Acceso al proyecto 🔨</h2>
+<br>
 
 - `Fácil acceso:`  Clona el repositorio, instala Godot 4.3, inserta y ejecuta el proyecto  y a jugar.
-    
+  
+<br><br>    
+
 <h2>🕹️ Funcionalidades del proyecto 🕹️</h2>
+<br>
  
 - `Estética pixel art`
 - `Estilo Metroidvania`
@@ -61,7 +69,10 @@
 - `Paisajes diversos`
 - `Banda sonora`
 
+<br><br>
+
 <h2>🛠️ Tecnologías utilizadas 🛠️</h2>
+<br>
  
 - `Godot 4.3`
 - `IntelliJ IDEA 2024 2.1`
