@@ -1,9 +1,19 @@
 <h1 align="center">🏁 Proyecto Final de Ciclo 🏁</h1>
+<br>
+<div align="center">
+  <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green" alt="Estado del proyecto" width="200">
+</div>
+<br>
+<p float="left">
+  <a href="https://www.youtube.com/watch?v=LOhfqjmasi0" target="_blank">
+     <img src="https://img.youtube.com/vi/LOhfqjmasi0/0.jpg" width="400" alt="Ver video en YouTube" />
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/b0632b45-73b0-4c48-947a-a0a8bbc5748b" width="300" alt="Apocalipsis_Hero_Icon" />
+</p>
 
-
-<h2>⚔️ Apocalispsis Hero ⚔️ <img align="right" src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green"></h2>
-<p>Aquí va la imagen del juego si es que no se puede poner el vídeo</p>
-![Apocalipsis_Hero_Icon](https://github.com/ArturoSM333/PFC/blob/main/Apocalipsis_Hero/Apocalipsis_Hero_Icon.png)
 
 
 <h2>🗒️ Descripción del proyecto 🗒️</h2>
