@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class Usuarios(models.Model):
+    nombre = models.CharField(max_length=20, unique=True)
+    contrasena = models.CharField(max_length=30)
+    niveles_completados = models.IntegerField(default=0)
