@@ -74,5 +74,5 @@
 <br>
  
 - `Godot 4.3`
-- `IntelliJ IDEA 2024 2.1`
+- `PyCharm Community Edition 2024 2.1`
 
