@@ -51,7 +51,7 @@
 <h2>🔨 Acceso al proyecto 🔨</h2>
 <br>
 
-- `Fácil acceso:`  Clona el repositorio, instala Godot 4.3, inserta y ejecuta el proyecto  y a jugar.
+- `Fácil acceso:`  Clona el repositorio, instala Godot 4.3, inserta, ejecuta el proyecto y a jugar!
   
 <br><br>    
 
@@ -61,7 +61,8 @@
 - `Estética pixel art`
 - `Estilo Metroidvania`
 - `Movimiento lateral en 2D con físicas integradas`
-- `Caminar, saltar, esquivar y deslizarse para atravesar obstáculos o evadir ataques`
+- `Caminar, saltar y deslizarse para atravesar obstáculos`
+- `Atacar o esquivar para superar combates frenéticos`
 - `Sistema de combate sencillo`
 - `Enemigos variados`
 - `HUD minimalista`
