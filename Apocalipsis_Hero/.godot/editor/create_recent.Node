@@ -1,5 +1,10 @@
-CollisionShape2D
+Control
+Sprite2D
+Camera2D
+Button
+HTTPRequest
 Label
+CollisionShape2D
 Node2D
 CanvasModulate
 CanvasLayer
@@ -7,8 +12,3 @@ Area2D
 CollisionPolygon2D
 AnimationPlayer
 Node
-TileMapLayer
-AnimatedSprite2D
-CharacterBody2D
-Sprite2D
-TextureProgressBar

@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3 uid="uid://t0smp2abpqq7"]
+
+[ext_resource type="Script" path="res://scripts/control_registrarse.gd" id="2_ffck0"]
+
+[node name="registrarse" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.6, 0.6)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_ffck0")
+
+[node name="boton_atras_registro" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -937.0
+offset_top = 386.0
+offset_right = -765.0
+offset_bottom = 514.0
+
+[node name="boton_registrarse" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -206.0
+offset_top = 391.0
+offset_right = 209.0
+offset_bottom = 494.0
+
+[node name="campo_nombre" type="LineEdit" parent="Control"]
+layout_mode = 0
+offset_left = -618.0
+offset_top = -146.0
+offset_right = 618.0
+offset_bottom = -45.0
+theme_override_font_sizes/font_size = 45
+
+[node name="campo_contrasena" type="LineEdit" parent="Control"]
+layout_mode = 0
+offset_left = -618.0
+offset_top = 146.0
+offset_right = 618.0
+offset_bottom = 246.0
+theme_override_font_sizes/font_size = 45
+secret = true
+
+[node name="status_label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = -524.0
+offset_top = 277.0
+offset_right = 506.0
+offset_bottom = 361.0
+
+[node name="HTTPRequest" type="HTTPRequest" parent="Control"]
+
+[connection signal="pressed" from="Control/boton_atras_registro" to="Control" method="_on_boton_atras_registro_pressed"]
+[connection signal="pressed" from="Control/boton_registrarse" to="Control" method="_on_boton_registrarse_pressed"]
