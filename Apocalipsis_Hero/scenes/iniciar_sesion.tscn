@@ -1,0 +1,105 @@
+[gd_scene load_steps=5 format=3 uid="uid://x6fl88ql63wl"]
+
+[ext_resource type="Texture2D" uid="uid://bkin3vi354xjn" path="res://assets/sprites/Backgrounds/Captura de pantalla 2025-05-19 113932.png" id="1_i2hj3"]
+[ext_resource type="Script" path="res://scripts/control_inicio_sesion.gd" id="2_0f6sq"]
+[ext_resource type="FontFile" uid="uid://cx0di1ohprr2e" path="res://assets/fonts/PixelOperator8.ttf" id="3_lles2"]
+[ext_resource type="FontFile" uid="uid://b52reryma4pbd" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_xfaol"]
+
+[node name="iniciar_sesion" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(2.49997, 1.52588e-05)
+scale = Vector2(1.09313, 1.11449)
+texture = ExtResource("1_i2hj3")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.601, 0.601)
+
+[node name="Control" type="Control" parent="."]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_0f6sq")
+
+[node name="title_label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = -140.0
+offset_top = -436.0
+offset_right = 145.0
+offset_bottom = -375.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_xfaol")
+theme_override_font_sizes/font_size = 60
+text = "LOGIN"
+
+[node name="boton_atras_iniciar_sesion" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -906.0
+offset_top = 358.0
+offset_right = -656.0
+offset_bottom = 501.0
+theme_override_fonts/font = ExtResource("3_lles2")
+theme_override_font_sizes/font_size = 30
+text = "BACK"
+
+[node name="boton_continuar_iniciando_sesion" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -246.0
+offset_top = 369.0
+offset_right = 245.0
+offset_bottom = 499.0
+theme_override_fonts/font = ExtResource("3_lles2")
+theme_override_font_sizes/font_size = 30
+text = "CONTINUE"
+flat = true
+
+[node name="campo_nombre" type="LineEdit" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = -618.0
+offset_top = -146.0
+offset_right = 617.0
+offset_bottom = -44.0
+theme_override_colors/font_placeholder_color = Color(0.690196, 0.690196, 0.690196, 1)
+theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_lles2")
+theme_override_font_sizes/font_size = 35
+placeholder_text = "NAME"
+
+[node name="campo_contrasena" type="LineEdit" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = -619.0
+offset_top = 142.0
+offset_right = 620.0
+offset_bottom = 246.0
+theme_override_colors/font_placeholder_color = Color(0.691357, 0.691357, 0.691357, 1)
+theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_lles2")
+theme_override_font_sizes/font_size = 35
+placeholder_text = "PASSWORD"
+secret = true
+
+[node name="status_label" type="Label" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = -528.0
+offset_top = 300.0
+offset_right = 526.0
+offset_bottom = 388.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+uppercase = true
+
+[node name="HTTPRequest" type="HTTPRequest" parent="Control"]
+
+[connection signal="pressed" from="Control/boton_atras_iniciar_sesion" to="Control" method="_on_boton_atras_iniciar_sesion_pressed"]
+[connection signal="pressed" from="Control/boton_continuar_iniciando_sesion" to="Control" method="_on_boton_continuar_iniciando_sesion_pressed"]
