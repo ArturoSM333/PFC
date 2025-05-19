@@ -1,10 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://t0smp2abpqq7"]
+[gd_scene load_steps=5 format=3 uid="uid://t0smp2abpqq7"]
 
+[ext_resource type="Texture2D" uid="uid://bkin3vi354xjn" path="res://assets/sprites/Backgrounds/Captura de pantalla 2025-05-19 113932.png" id="1_6jdrb"]
 [ext_resource type="Script" path="res://scripts/control_registrarse.gd" id="2_ffck0"]
+[ext_resource type="FontFile" uid="uid://b52reryma4pbd" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_j0o45"]
+[ext_resource type="FontFile" uid="uid://cx0di1ohprr2e" path="res://assets/fonts/PixelOperator8.ttf" id="4_blps7"]
 
 [node name="registrarse" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2, 3)
+scale = Vector2(1.09483, 1.10233)
+texture = ExtResource("1_6jdrb")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(0.6, 0.6)
@@ -16,12 +22,29 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("2_ffck0")
 
+[node name="title_label" type="Label" parent="Control"]
+top_level = true
+layout_mode = 0
+offset_left = -234.0
+offset_top = -435.0
+offset_right = 231.0
+offset_bottom = -374.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_j0o45")
+theme_override_font_sizes/font_size = 60
+text = "REGISTER"
+
 [node name="boton_atras_registro" type="Button" parent="Control"]
 layout_mode = 0
-offset_left = -937.0
-offset_top = 386.0
-offset_right = -765.0
-offset_bottom = 514.0
+offset_left = -907.0
+offset_top = 361.0
+offset_right = -662.0
+offset_bottom = 489.0
+theme_override_fonts/font = ExtResource("4_blps7")
+theme_override_font_sizes/font_size = 30
+text = "BACK"
 
 [node name="boton_registrarse" type="Button" parent="Control"]
 layout_mode = 0
@@ -29,6 +52,9 @@ offset_left = -206.0
 offset_top = 391.0
 offset_right = 209.0
 offset_bottom = 494.0
+theme_override_fonts/font = ExtResource("4_blps7")
+theme_override_font_sizes/font_size = 30
+text = "CREATE"
 
 [node name="campo_nombre" type="LineEdit" parent="Control"]
 layout_mode = 0
@@ -36,7 +62,12 @@ offset_left = -618.0
 offset_top = -146.0
 offset_right = 618.0
 offset_bottom = -45.0
-theme_override_font_sizes/font_size = 45
+theme_override_colors/font_placeholder_color = Color(0.690196, 0.690196, 0.690196, 1)
+theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_blps7")
+theme_override_font_sizes/font_size = 35
+placeholder_text = "NAME"
 
 [node name="campo_contrasena" type="LineEdit" parent="Control"]
 layout_mode = 0
@@ -44,15 +75,25 @@ offset_left = -618.0
 offset_top = 146.0
 offset_right = 618.0
 offset_bottom = 246.0
-theme_override_font_sizes/font_size = 45
+theme_override_colors/font_placeholder_color = Color(0.690196, 0.690196, 0.690196, 1)
+theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_blps7")
+theme_override_font_sizes/font_size = 35
+placeholder_text = "PASSWORD"
 secret = true
 
 [node name="status_label" type="Label" parent="Control"]
+top_level = true
 layout_mode = 0
 offset_left = -524.0
-offset_top = 277.0
+offset_top = 293.0
 offset_right = 506.0
-offset_bottom = 361.0
+offset_bottom = 368.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+uppercase = true
 
 [node name="HTTPRequest" type="HTTPRequest" parent="Control"]
 

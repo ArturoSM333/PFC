@@ -1,12 +1,12 @@
+Label
+CanvasModulate
 Control
 Sprite2D
 Camera2D
 Button
 HTTPRequest
-Label
 CollisionShape2D
 Node2D
-CanvasModulate
 CanvasLayer
 Area2D
 CollisionPolygon2D

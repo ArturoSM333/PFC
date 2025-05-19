@@ -40,7 +40,7 @@ func _on_request_completed(result, response_code, headers, body):
 
 	if response_code == 201:
 		status_label.text = "Usuario creado con éxito."
-		get_tree().change_scene_to_file("res://scenes/iniciar_sesion.tscn")
+		get_tree().change_scene_to_file("res://scenes/inicio_o_registro.tscn")
 	elif response_code == 409:
 		status_label.text = "El usuario ya existe."
 	else:

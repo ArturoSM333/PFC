@@ -1,10 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://dp6026iq3l1um"]
+[gd_scene load_steps=5 format=3 uid="uid://dp6026iq3l1um"]
 
-[ext_resource type="Script" path="res://registrarse_o_iniciar.gd" id="1_k36lu"]
+[ext_resource type="Script" path="res://scripts/registrarse_o_iniciar.gd" id="1_k36lu"]
+[ext_resource type="Texture2D" uid="uid://c5ruqaohs768h" path="res://assets/sprites/Backgrounds/PNG/Battleground3/Bright/Battleground3.png" id="1_mow61"]
+[ext_resource type="Theme" uid="uid://gjrl36nl2x6j" path="res://scenes/Default.tres" id="3_7p6ix"]
+[ext_resource type="FontFile" uid="uid://cx0di1ohprr2e" path="res://assets/fonts/PixelOperator8.ttf" id="4_lbpr2"]
 
 [node name="inicio_o_registro" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(576, 325.125)
+scale = Vector2(0.603125, 0.607176)
+texture = ExtResource("1_mow61")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(577, 326)
@@ -17,24 +23,36 @@ offset_bottom = 40.0
 script = ExtResource("1_k36lu")
 
 [node name="boton_ir_a_inicio" type="Button" parent="Control"]
-offset_left = 739.0
-offset_top = 281.0
-offset_right = 994.0
-offset_bottom = 379.0
+layout_mode = 0
+offset_left = 694.0
+offset_top = 132.0
+offset_right = 945.0
+offset_bottom = 357.0
+theme = ExtResource("3_7p6ix")
+theme_override_fonts/font = ExtResource("4_lbpr2")
+theme_override_font_sizes/font_size = 25
 text = "Login"
 
 [node name="boton_ir_a_registro" type="Button" parent="Control"]
-offset_left = 193.0
-offset_top = 270.0
-offset_right = 390.0
-offset_bottom = 368.0
+layout_mode = 0
+offset_left = 202.0
+offset_top = 132.0
+offset_right = 455.0
+offset_bottom = 363.0
+theme = ExtResource("3_7p6ix")
+theme_override_fonts/font = ExtResource("4_lbpr2")
+theme_override_font_sizes/font_size = 25
 text = "Register"
 
 [node name="boton_volver_menu" type="Button" parent="Control"]
-offset_left = 48.0
-offset_top = 543.0
-offset_right = 227.0
-offset_bottom = 612.0
+layout_mode = 0
+offset_left = 18.0
+offset_top = 527.0
+offset_right = 202.0
+offset_bottom = 631.0
+theme = ExtResource("3_7p6ix")
+theme_override_fonts/font = ExtResource("4_lbpr2")
+theme_override_font_sizes/font_size = 25
 text = "Back"
 
 [connection signal="pressed" from="Control/boton_ir_a_inicio" to="Control" method="_on_boton_ir_a_inicio_pressed"]
