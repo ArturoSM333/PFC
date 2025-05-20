@@ -1,10 +1,10 @@
+HTTPRequest
 Label
 CanvasModulate
 Control
 Sprite2D
 Camera2D
 Button
-HTTPRequest
 CollisionShape2D
 Node2D
 CanvasLayer

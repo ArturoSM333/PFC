@@ -6,6 +6,7 @@ extends Control
 @onready var campo_nombre: LineEdit = $campo_nombre
 @onready var campo_contrasena: LineEdit = $campo_contrasena
 var nombre 
+var niveles_completados = 0
 
 func _ready():
 	# Conecta la señal de solicitud completada del HTTPRequest
@@ -57,7 +58,15 @@ func _on_request_completed(result, response_code, headers, body):
 		if error == OK:
 			var response = json.get_data()
 			print("JSON Parseado:", response)
-			status_label.text = "Inicio de sesión exitoso."
+			# Asignar niveles_completados si existe en la respuesta
+			if response.has("niveles_completados"):
+				Global.niveles_completados = response["niveles_completados"]
+				print("Niveles completados:", niveles_completados)
+			else:
+				print("Advertencia: 'niveles_completados' no encontrado en la respuesta.")
+			
+			Global.nombre_usuario = nombre
+			status_label.text = nombre + "has iniciado sesión."
 			get_tree().change_scene_to_file("res://scenes/levels_menu.tscn")
 		else:
 			print("Error al parsear JSON:", json.get_error_message())

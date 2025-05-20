@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1747648116
+::res://::1747750949
 Apocalipsis_Hero_Icon.png::CompressedTexture2D::3939556020881443943::1747041118::1747057515::1::::<><>::
 default_bus_layout.tres::AudioBusLayout::1557818360707185488::1732710028::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1732789233::0::1::::<><>::
@@ -44,8 +44,8 @@ Roll.png::CompressedTexture2D::6582504922925304349::1731664478::1747057515::1:::
 Run.png::CompressedTexture2D::6120441442013992572::1731664478::1747057515::1::::<><>::
 Slide.png::CompressedTexture2D::386477928560242608::1731664478::1747057515::1::::<><>::
 ::res://assets/sprites/2D_SL_Knight_v1.0/_PSD/::1747052876
-::res://assets/sprites/Backgrounds/::1747648116
-Captura de pantalla 2025-05-19 113932.png::CompressedTexture2D::3105664581903441251::1747648110::1747648117::1::::<><>::
+::res://assets/sprites/Backgrounds/::1747652570
+Captura de pantalla 2025-05-19 113932.png::CompressedTexture2D::3105664581903441251::1747650119::1747652570::1::::<><>::
 COUPON.png::CompressedTexture2D::1216613455269470424::1731953423::1747057517::1::::<><>::
 License.txt::TextFile::-1::1731953423::0::1::::<><>::
 readme.txt::TextFile::-1::1731953423::0::1::::<><>::
@@ -93,9 +93,9 @@ floor.png::CompressedTexture2D::983245182982843633::1731953423::1747057515::1:::
 mountaims.png::CompressedTexture2D::2813100170919182656::1731953423::1747057515::1::::<><>::
 wall@windows.png::CompressedTexture2D::64250398938750695::1731953423::1747057515::1::::<><>::
 ::res://assets/sprites/Backgrounds/PNG/Battleground3/::1747052878
-::res://assets/sprites/Backgrounds/PNG/Battleground3/Bright/::1747647667
+::res://assets/sprites/Backgrounds/PNG/Battleground3/Bright/::1747652570
 Battleground3.png::CompressedTexture2D::6914844032874655973::1731953423::1747057515::1::::<><>::
-Captura de pantalla 2025-05-19 113932.png::CompressedTexture2D::3626987882828524624::1747647666::1747647667::1::::<><>::
+Captura de pantalla 2025-05-19 113932.png::CompressedTexture2D::3626987882828524624::1747650119::1747652570::1::::<><>::
 fireflys.png::CompressedTexture2D::4421000124506980674::1731953423::1747057515::1::::<><>::
 grass&road.png::CompressedTexture2D::9082195478845369107::1731953423::1747057515::1::::<><>::
 grasses.png::CompressedTexture2D::5810399802430242743::1731953423::1747057516::1::::<><>::
@@ -387,7 +387,7 @@ sky.png::CompressedTexture2D::5509394153050481557::1732047295::1747057514::1::::
 tileset.png::CompressedTexture2D::752238033022104806::1732047295::1747057514::1::::<><>::
 world-tileset.tres::TileSet::4807989238419567935::1732047320::0::1::::<><>::uid://kynirtw4oukc::::res://assets/sprites/World/tileset.png
 world.tscn::PackedScene::6952009096337019688::1732047320::0::1::::<><>::uid://bqanpsoo6txmg::::res://assets/sprites/World/parallax_background.tscn<>uid://cara46vlt5bdv::::res://assets/sprites/World/world-tileset.tres<>res://Player/player.tscn<>res://Enemies/Fox/fox.tscn<>res://Enemies/ShurikenDude/shuriken_dude.tscn<>res://Music/magic cliffs.ogg
-::res://scenes/::1747647548
+::res://scenes/::1747749848
 cancion_final.tscn::PackedScene::9031042062279697078::1732718775::0::1::::<><>::res://scripts/cancion_final.gd<>uid://c11efe8ld4td6::::res://assets/Sounds/Sounds/round_end.wav
 Default.tres::Theme::440765813373906027::1747645598::0::1::::<><>::uid://rd305ym5vtf7::::res://assets/sprites/CrimsonFantasyGUI/Newstuff 1.png
 Diablo.tscn::PackedScene::6286868857251639109::1732747986::0::1::::<><>::res://scripts/fantasma_levita.gd<>uid://duyut2xw6bvc4::::res://assets/sprites/LPC imp/walk - vanilla.png<>uid://d3yql62o06opj::::res://scenes/killzone.tscn
@@ -395,37 +395,38 @@ Fantasma_levita.tscn::PackedScene::7630545343906097283::1732709560::0::1::::<><>
 final.tscn::PackedScene::6615117086614697157::1732716808::0::1::::<><>::res://scripts/final.gd
 final_demo.tscn::PackedScene::5024980378090109497::1732749623::0::1::::<><>::uid://b52reryma4pbd::::res://assets/fonts/PixelOperator8-Bold.ttf
 guadaña_persigue.tscn::PackedScene::3987120272541705986::1747059111::0::1::::<><>::res://scripts/Diablo_inteligente.gd<>uid://bum0asninkq3p::::res://assets/sprites/Enemigos/Undead executioner puppet/png/idle2.png<>uid://d3yql62o06opj::::res://scenes/killzone.tscn
-iniciar_sesion.tscn::PackedScene::1678664127739402575::1747647548::0::1::::<><>::res://scripts/control_inicio_sesion.gd
-inicio_o_registro.tscn::PackedScene::8277658198627372852::1747647548::0::1::::<><>::res://scripts/registrarse_o_iniciar.gd<>uid://c5ruqaohs768h::::res://assets/sprites/Backgrounds/PNG/Battleground3/Bright/Battleground3.png<>uid://gjrl36nl2x6j::::res://scenes/Default.tres<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf
+iniciar_sesion.tscn::PackedScene::1678664127739402575::1747749847::0::1::::<><>::uid://bkin3vi354xjn::::res://assets/sprites/Backgrounds/Captura de pantalla 2025-05-19 113932.png<>res://scripts/control_inicio_sesion.gd<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf<>uid://b52reryma4pbd::::res://assets/fonts/PixelOperator8-Bold.ttf
+inicio_o_registro.tscn::PackedScene::8277658198627372852::1747650119::0::1::::<><>::res://scripts/registrarse_o_iniciar.gd<>uid://c5ruqaohs768h::::res://assets/sprites/Backgrounds/PNG/Battleground3/Bright/Battleground3.png<>uid://gjrl36nl2x6j::::res://scenes/Default.tres<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf
 interfaz.tscn::PackedScene::2598824431769994664::1747059111::0::1::::<><>::uid://c1su6nktud6ti::::res://assets/sprites/CrimsonFantasyGUI/AnimationSheets/CriticalDamage/CriticalDamage-Sheet.png
 killzone.tscn::PackedScene::9175087525263174983::1732747986::0::1::::<><>::res://scripts/killzone.gd<>uid://b4anyo4666lty::::res://assets/Sounds/Sounds/death.wav
-levels_menu.tscn::PackedScene::1772161708847387870::1732717799::0::1::::<><>::res://scripts/levels_menu.gd<>uid://c3fh5horuqyp7::::res://assets/sprites/Backgrounds/PNG/Battleground1/Bright/sky.png<>uid://c4mki21wx07x5::::res://assets/sprites/Backgrounds/PNG/Battleground1/Bright/ruins2.png<>uid://bhtxuugu1tv12::::res://scenes/menu_character.tscn<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf<>uid://b52reryma4pbd::::res://assets/fonts/PixelOperator8-Bold.ttf<>res://scripts/tutorial_2.gd<>res://scripts/level_2_2.gd<>res://scripts/level_3_3.gd
-Level_1.tscn::PackedScene::6243723762493059625::1732749623::0::1::::<><>::uid://cw2ghsyh81b7y::::res://scenes/main_character.tscn<>uid://b56bqv84uu7ja::::res://assets/sprites/World/sea.png<>uid://ckq16f1wlb5xx::::res://assets/sprites/World/sky.png<>uid://kynirtw4oukc::::res://assets/sprites/World/tileset.png<>uid://bubiokecv02fh::::res://assets/sprites/World/clouds.png<>uid://d0imarthe77sx::::res://assets/sprites/World/far-grounds.png<>uid://d3yql62o06opj::::res://scenes/killzone.tscn<>uid://brcinrxl522f1::::res://scenes/platforms_tutorial.tscn<>uid://banlh4w08jcl1::::res://scenes/menu_pausa.tscn<>uid://dv41gmotvgexr::::res://scenes/star.tscn<>uid://wflfjok14v2j::::res://assets/Sounds/Sounds/little town - orchestral.ogg<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf<>uid://dgyj743c4ag4b::::res://scenes/Fantasma_levita.tscn<>res://scripts/pinchos_trampa.gd<>uid://d4nq1uvqgmwv6::::res://assets/sprites/Backgrounds/untitled folder/twilight-tiles-transformed.png<>uid://c1ioan2ekby82::::res://scenes/final.tscn<>uid://d1wx7cqapa5y5::::res://scenes/cancion_final.tscn
+levels_menu.tscn::PackedScene::1772161708847387870::1747749848::0::1::::<><>::res://scripts/levels_menu.gd<>uid://c3fh5horuqyp7::::res://assets/sprites/Backgrounds/PNG/Battleground1/Bright/sky.png<>uid://c4mki21wx07x5::::res://assets/sprites/Backgrounds/PNG/Battleground1/Bright/ruins2.png<>uid://bhtxuugu1tv12::::res://scenes/menu_character.tscn<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf<>uid://b52reryma4pbd::::res://assets/fonts/PixelOperator8-Bold.ttf<>res://scripts/tutorial_2.gd<>res://scripts/level_2_2.gd<>res://scripts/level_3_3.gd
+Level_1.tscn::PackedScene::6243723762493059625::1747749848::0::1::::<><>::uid://cw2ghsyh81b7y::::res://scenes/main_character.tscn<>uid://b56bqv84uu7ja::::res://assets/sprites/World/sea.png<>uid://ckq16f1wlb5xx::::res://assets/sprites/World/sky.png<>uid://kynirtw4oukc::::res://assets/sprites/World/tileset.png<>uid://bubiokecv02fh::::res://assets/sprites/World/clouds.png<>uid://d0imarthe77sx::::res://assets/sprites/World/far-grounds.png<>uid://d3yql62o06opj::::res://scenes/killzone.tscn<>uid://brcinrxl522f1::::res://scenes/platforms_tutorial.tscn<>uid://banlh4w08jcl1::::res://scenes/menu_pausa.tscn<>uid://dv41gmotvgexr::::res://scenes/star.tscn<>uid://wflfjok14v2j::::res://assets/Sounds/Sounds/little town - orchestral.ogg<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf<>uid://dgyj743c4ag4b::::res://scenes/Fantasma_levita.tscn<>res://scripts/pinchos_trampa.gd<>uid://d4nq1uvqgmwv6::::res://assets/sprites/Backgrounds/untitled folder/twilight-tiles-transformed.png<>uid://c1ioan2ekby82::::res://scenes/final.tscn<>uid://d1wx7cqapa5y5::::res://scenes/cancion_final.tscn
 Level_2.tscn::PackedScene::6243723762493059625::1747059111::0::1::::<><>::uid://cw2ghsyh81b7y::::res://scenes/main_character.tscn<>uid://51rmjhha4aw8::::res://assets/sprites/living-tissue-platform-files/PNG/layers/bakground.png<>uid://5c1mp0rbi5kq::::res://assets/sprites/living-tissue-platform-files/PNG/layers/tileset.png<>uid://brcinrxl522f1::::res://scenes/platforms_tutorial.tscn<>uid://crgvcd42d04oy::::res://assets/Sounds/Sounds/radakan - inferno_0.ogg<>uid://dgyj743c4ag4b::::res://scenes/Fantasma_levita.tscn<>uid://d3yql62o06opj::::res://scenes/killzone.tscn<>uid://cvtn2ufnmm2rx::::res://scenes/Diablo.tscn<>uid://banlh4w08jcl1::::res://scenes/menu_pausa.tscn<>uid://bw2nj2l3eioec::::res://scenes/guadaña_persigue.tscn<>uid://dv41gmotvgexr::::res://scenes/star.tscn<>uid://d1wx7cqapa5y5::::res://scenes/cancion_final.tscn<>res://scripts/finaldeltodo.gd
 main_character.tscn::PackedScene::6373111912155241372::1747059111::0::1::::<><>::uid://jcwy83g5120p::::res://assets/sprites/2D_SL_Knight_v1.0/Idle.png<>uid://db1fpmn2u6efh::::res://assets/sprites/2D_SL_Knight_v1.0/Attacks.png<>uid://3bridskkcj42::::res://assets/sprites/2D_SL_Knight_v1.0/Health.png<>uid://dls6hy6ucm0fk::::res://assets/sprites/2D_SL_Knight_v1.0/Death.png<>uid://bvxi1x6mqkioy::::res://assets/sprites/2D_SL_Knight_v1.0/Jump.png<>uid://dqbmsaa6f15mi::::res://assets/sprites/2D_SL_Knight_v1.0/Hurt.png<>uid://ctg11npme43mm::::res://assets/sprites/2D_SL_Knight_v1.0/Run.png<>uid://frhh8xfmcou7::::res://assets/sprites/2D_SL_Knight_v1.0/Slide.png<>uid://c01u5n5dtwomn::::res://assets/sprites/2D_SL_Knight_v1.0/Roll.png<>uid://00r3fa1kei4d::::res://assets/sprites/2D_SL_Knight_v1.0/Pray.png<>uid://htgxkv12jvxb::::res://assets/sprites/2D_SL_Knight_v1.0/Hanging.png<>uid://dirhk8e5hj5ts::::res://assets/Sounds/Sounds/grunt-106134 (mp3cut.net).mp3
 menu_character.tscn::PackedScene::2918399033878244635::1732531731::0::1::::<><>::uid://db1fpmn2u6efh::::res://assets/sprites/2D_SL_Knight_v1.0/Attacks.png<>uid://dls6hy6ucm0fk::::res://assets/sprites/2D_SL_Knight_v1.0/Death.png<>uid://jcwy83g5120p::::res://assets/sprites/2D_SL_Knight_v1.0/Idle.png<>uid://bvxi1x6mqkioy::::res://assets/sprites/2D_SL_Knight_v1.0/Jump.png<>uid://c01u5n5dtwomn::::res://assets/sprites/2D_SL_Knight_v1.0/Roll.png<>uid://ctg11npme43mm::::res://assets/sprites/2D_SL_Knight_v1.0/Run.png<>uid://frhh8xfmcou7::::res://assets/sprites/2D_SL_Knight_v1.0/Slide.png
 menu_opciones.tscn::PackedScene::522828384784934841::1747059111::0::1::::<><>::res://scripts/menu_opciones.gd<>uid://b52reryma4pbd::::res://assets/fonts/PixelOperator8-Bold.ttf<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf<>res://scripts/sfx.gd
 menu_pausa.tscn::PackedScene::2413939540316835984::1732531727::0::1::::<><>::res://scripts/menu_pausa.gd<>uid://b52reryma4pbd::::res://assets/fonts/PixelOperator8-Bold.ttf<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf
-menu_principal.tscn::PackedScene::5865363610953605746::1747647548::0::1::::<><>::res://scripts/menu_principal.gd<>uid://c53dgv5klaipm::::res://assets/sprites/Fondos_Menu/buena_calidad.jpg<>uid://gjrl36nl2x6j::::res://scenes/Default.tres<>uid://bhtxuugu1tv12::::res://scenes/menu_character.tscn<>uid://b52reryma4pbd::::res://assets/fonts/PixelOperator8-Bold.ttf<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf<>uid://dv41gmotvgexr::::res://scenes/star.tscn<>uid://bj5wjb8rgcl2r::::res://assets/Sounds/Sounds/ChiptuneAdventure.mp3
+menu_principal.tscn::PackedScene::5865363610953605746::1747649745::0::1::::<><>::res://scripts/menu_principal.gd<>uid://c53dgv5klaipm::::res://assets/sprites/Fondos_Menu/buena_calidad.jpg<>uid://gjrl36nl2x6j::::res://scenes/Default.tres<>uid://bhtxuugu1tv12::::res://scenes/menu_character.tscn<>uid://b52reryma4pbd::::res://assets/fonts/PixelOperator8-Bold.ttf<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf<>uid://dv41gmotvgexr::::res://scenes/star.tscn<>uid://bj5wjb8rgcl2r::::res://assets/Sounds/Sounds/ChiptuneAdventure.mp3
 music.tscn::PackedScene::6132331518504355438::1732716272::0::1::::<><>::uid://cb7pi4o8iy7f0::::res://assets/Sounds/Sounds/happy_adveture.mp3
 platforms_tutorial.tscn::PackedScene::3584269661279092872::1732747986::0::1::::<><>::uid://d4nq1uvqgmwv6::::res://assets/sprites/Backgrounds/untitled folder/twilight-tiles-transformed.png
-registrarse.tscn::PackedScene::1386312637932681160::1747647548::0::1::::<><>::res://scripts/control_registrarse.gd
+registrarse.tscn::PackedScene::1386312637932681160::1747650119::0::1::::<><>::uid://bkin3vi354xjn::::res://assets/sprites/Backgrounds/Captura de pantalla 2025-05-19 113932.png<>res://scripts/control_registrarse.gd<>uid://b52reryma4pbd::::res://assets/fonts/PixelOperator8-Bold.ttf<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf
 star.tscn::PackedScene::8694684731720115087::1732716808::0::1::::<><>::res://scripts/star.gd<>uid://b1quqyx7pc0eh::::res://scenes/Stars/Star.png<>uid://c0qlf1mxps30i::::res://assets/Sounds/gmae.wav
-Tutorial.tscn::PackedScene::4313523723687896644::1732749622::0::1::::<><>::uid://cw2ghsyh81b7y::::res://scenes/main_character.tscn<>uid://d4nq1uvqgmwv6::::res://assets/sprites/Backgrounds/untitled folder/twilight-tiles-transformed.png<>uid://gea3f3k41fut::::res://assets/sprites/Backgrounds/untitled folder/exterior-parallaxBG1.png<>uid://d3yql62o06opj::::res://scenes/killzone.tscn<>uid://6iw6naxdb4k1::::res://assets/sprites/Backgrounds/untitled folder/exterior-parallaxBG2-transformed.png<>uid://brcinrxl522f1::::res://scenes/platforms_tutorial.tscn<>uid://dv41gmotvgexr::::res://scenes/star.tscn<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf<>uid://banlh4w08jcl1::::res://scenes/menu_pausa.tscn<>uid://dgyj743c4ag4b::::res://scenes/Fantasma_levita.tscn<>uid://ctmsusodljcao::::res://scenes/music.tscn<>res://scripts/pinchos_sorpresa.gd<>uid://c1ioan2ekby82::::res://scenes/final.tscn<>uid://d1wx7cqapa5y5::::res://scenes/cancion_final.tscn
+Tutorial.tscn::PackedScene::4313523723687896644::1747749847::0::1::::<><>::uid://cw2ghsyh81b7y::::res://scenes/main_character.tscn<>uid://d4nq1uvqgmwv6::::res://assets/sprites/Backgrounds/untitled folder/twilight-tiles-transformed.png<>uid://gea3f3k41fut::::res://assets/sprites/Backgrounds/untitled folder/exterior-parallaxBG1.png<>uid://d3yql62o06opj::::res://scenes/killzone.tscn<>uid://6iw6naxdb4k1::::res://assets/sprites/Backgrounds/untitled folder/exterior-parallaxBG2-transformed.png<>uid://brcinrxl522f1::::res://scenes/platforms_tutorial.tscn<>uid://dv41gmotvgexr::::res://scenes/star.tscn<>uid://cx0di1ohprr2e::::res://assets/fonts/PixelOperator8.ttf<>uid://banlh4w08jcl1::::res://scenes/menu_pausa.tscn<>uid://dgyj743c4ag4b::::res://scenes/Fantasma_levita.tscn<>uid://ctmsusodljcao::::res://scenes/music.tscn<>res://scripts/pinchos_sorpresa.gd<>uid://c1ioan2ekby82::::res://scenes/final.tscn<>uid://d1wx7cqapa5y5::::res://scenes/cancion_final.tscn
 ::res://scenes/Stars/::1747057516
 rb_2150212584.png::CompressedTexture2D::3504692124174739552::1732528065::1747057516::1::::<><>::
 Star.png::CompressedTexture2D::4245604872469698355::1732528065::1747057514::1::::<><>::
-::res://scripts/::1747645598
+::res://scripts/::1747749595
 cancion_final.gd::GDScript::-1::1747407746::0::1::::<>Area2D<>::
-control_inicio_sesion.gd::GDScript::-1::1747426540::0::1::::<>Control<>::
-control_registrarse.gd::GDScript::-1::1747426481::0::1::::<>Control<>::
+control_inicio_sesion.gd::GDScript::-1::1747747820::0::1::::<>Control<>::
+control_registrarse.gd::GDScript::-1::1747650119::0::1::::<>Control<>::
 dark_mode.gd::GDScript::-1::1747407746::0::1::::<>CheckButton<>::
 Diablo_inteligente.gd::GDScript::-1::1747407746::0::1::::Enemy<>CharacterBody2D<>::
 fantasma_levita.gd::GDScript::-1::1747407746::0::1::::<>Node2D<>::
-final.gd::GDScript::-1::1747407746::0::1::::<>Area2D<>::
+final.gd::GDScript::-1::1747748752::0::1::::<>Area2D<>::
 finaldeltodo.gd::GDScript::-1::1747407746::0::1::::<>Area2D<>::
+global.gd::GDScript::-1::1747747639::0::1::::<>Node<>::
 killzone.gd::GDScript::-1::1747407746::0::1::::<>Area2D<>::
-levels_menu.gd::GDScript::-1::1747407746::0::1::::<>Node2D<>::
+levels_menu.gd::GDScript::-1::1747749595::0::1::::<>Node2D<>::
 level_1_1.gd::GDScript::-1::1732282469::0::1::::<>Area2D<>::
 level_2_2.gd::GDScript::-1::1747407746::0::1::::<>Area2D<>::
 level_3_3.gd::GDScript::-1::1747407746::0::1::::<>Area2D<>::
@@ -433,10 +434,10 @@ main_character.gd::GDScript::-1::1732299157::0::1::::<>CharacterBody2D<>::
 menu_character.gd::GDScript::-1::1747407746::0::1::::<>CharacterBody2D<>::
 menu_opciones.gd::GDScript::-1::1747407746::0::1::::<>Node2D<>::
 menu_pausa.gd::GDScript::-1::1747407746::0::1::::<>CanvasLayer<>::
-menu_principal.gd::GDScript::-1::1747426098::0::1::::<>Node2D<>::
+menu_principal.gd::GDScript::-1::1747650119::0::1::::<>Node2D<>::
 pinchos_sorpresa.gd::GDScript::-1::1747407746::0::1::::<>Area2D<>::
 pinchos_trampa.gd::GDScript::-1::1747407746::0::1::::<>Area2D<>::
-registrarse_o_iniciar.gd::GDScript::-1::1747426179::0::1::::<>Control<>::
+registrarse_o_iniciar.gd::GDScript::-1::1747650119::0::1::::<>Control<>::
 resolution_button.gd::GDScript::-1::1747407746::0::1::::<>MenuButton<>::
 sfx.gd::GDScript::-1::1747407746::0::1::::<>HSlider<>::
 star.gd::GDScript::-1::1747407746::0::1::::<>Area2D<>::
