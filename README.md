@@ -59,6 +59,7 @@
 <br>
  
 - `Estética pixel art`
+- `¡¡Guarda tu progreso y continúa cuando quieras!!`
 - `Estilo Metroidvania`
 - `Movimiento lateral en 2D con físicas integradas`
 - `Caminar, saltar y deslizarse para atravesar obstáculos`
