@@ -18,10 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from heroapp import register_endpoint
 from heroapp import login_endpoint
-
+from heroapp import levels_endpoint
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/1/users', register_endpoint.register),
-    path('api/1/sessions', login_endpoint.login)
+    path('api/1/sessions', login_endpoint.login),
+    path('api/1/progreso', levels_endpoint.actualizar_niveles)
 ]
