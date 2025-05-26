@@ -49,10 +49,38 @@
 <br><br>
 
 <h2>🔨 Acceso al proyecto 🔨</h2>
-<br>
+<br><br>
 
-- `Fácil acceso:`  Clona el repositorio, instala Godot 4.3, inserta, ejecuta el proyecto y a jugar!
+- `Clonar el repositorio:`
+
+<br>Abre tu terminal o CMD y ejecuta: `git clone https://github.com/ArturoSM333/PFC.git` 
+<br>Esto descargará todo el proyecto en tu máquina local.
+
+<br><br>
+- `Instalar Godot 4.3:`
   
+<br>Descarga e instala Godot 4.3 desde su página oficial. 
+<br>Asegúrate de tener la versión 4.3 para compatibilidad total.
+
+<br><br>
+- `Abrir el proyecto en Godot:`
+
+<br>Abre Godot. Haz clic en “Importar” o “Abrir un proyecto existente”.
+<br>Navega a la carpeta donde clonaste el repositorio y selecciona el archivo project.godot o la carpeta raíz del proyecto. Godot cargará el proyecto.
+
+<br><br>
+- `Ejecutar la REST API:`
+
+<br>Desde el CMD navega a .../PFC/django/HeroAPI. Ejecuta el servidor con el comando python manage.py runserver.
+<br>Asegúrate de tener instalado Python 3.12.6 (u otra versión compatible).
+<br>Asegúrate también de que la API esté corriendo antes de iniciar el juego para que pueda comunicarse.
+
+<br><br>
+- `Ejecutar el juego:`
+
+<br>Dentro de Godot, pulsa el botón de “Play” (el triángulo verde) para lanzar el juego.
+<br>El juego debería iniciarse con todas sus funcionalidades.
+<br>
 <br><br>    
 
 <h2>🕹️ Funcionalidades del proyecto 🕹️</h2>
@@ -75,6 +103,8 @@
 <h2>🛠️ Tecnologías utilizadas 🛠️</h2>
 <br>
  
-- `Godot 4.3`
-- `PyCharm Community Edition 2024 2.1`
+- `Godot 4.3:`<br> Motor de juego multiplataforma y de código abierto. Usado para diseñar, programar y ejecutar el videojuego con físicas, animaciones y lógica en 2D.<br><br>
+- `PyCharm Community Edition 2024 2.1:` <br>IDE usado para desarrollar la REST API del proyecto, que permite gestionar funciones en línea, como guardar progreso y futuras actualizaciones.<br><br>
+- `Python 3.12.6:` <br>Lenguaje de programación utilizado para la implementación de la REST API y scripts auxiliares.<br><br>
+- `Git y GitHub:` <br>Para control de versiones, gestión colaborativa del código y seguimiento de cambios.<br><br>
 
