@@ -429,9 +429,9 @@ libraries = {
 }
 autoplay = "mover"
 
-[node name="Etiquetas" type="Node" parent="."]
+[node name="Etiquetas" type="Node" parent="Fondo"]
 
-[node name="To move" type="Label" parent="Etiquetas"]
+[node name="To move" type="Label" parent="Fondo/Etiquetas"]
 offset_left = 20.0
 offset_top = -130.0
 offset_right = 118.0
@@ -440,7 +440,7 @@ theme_override_fonts/font = ExtResource("6_kdynu")
 theme_override_font_sizes/font_size = 8
 text = "To move use:"
 
-[node name="wasd" type="Label" parent="Etiquetas"]
+[node name="wasd" type="Label" parent="Fondo/Etiquetas"]
 offset_left = -9.0
 offset_top = -111.0
 offset_right = 145.0
@@ -449,7 +449,7 @@ theme_override_fonts/font = ExtResource("6_kdynu")
 theme_override_font_sizes/font_size = 8
 text = "w, a, s, d  ||  arrows"
 
-[node name="slide" type="Label" parent="Etiquetas"]
+[node name="slide" type="Label" parent="Fondo/Etiquetas"]
 offset_left = 1377.0
 offset_top = 137.0
 offset_right = 1695.0
@@ -459,7 +459,7 @@ theme_override_font_sizes/font_size = 8
 text = "To slide  you can use \"s\" or bottom arrow"
 horizontal_alignment = 1
 
-[node name="dodge" type="Label" parent="Etiquetas"]
+[node name="dodge" type="Label" parent="Fondo/Etiquetas"]
 offset_left = 2804.0
 offset_top = -162.0
 offset_right = 3244.0
@@ -469,7 +469,7 @@ theme_override_font_sizes/font_size = 8
 text = "To dodge attacks you can use \"K\" or right click"
 horizontal_alignment = 1
 
-[node name="trampas" type="Label" parent="Etiquetas"]
+[node name="trampas" type="Label" parent="Fondo/Etiquetas"]
 offset_left = 3342.0
 offset_top = -224.0
 offset_right = 3782.0
@@ -479,7 +479,7 @@ theme_override_font_sizes/font_size = 8
 text = "Watch where you step"
 horizontal_alignment = 1
 
-[node name="trampas_sorpresa" type="Label" parent="Etiquetas"]
+[node name="trampas_sorpresa" type="Label" parent="Fondo/Etiquetas"]
 offset_left = 3895.0
 offset_top = -249.0
 offset_right = 4335.0
@@ -489,7 +489,7 @@ theme_override_font_sizes/font_size = 8
 text = "Not everything is what it seems..."
 horizontal_alignment = 1
 
-[node name="mensaje_final" type="Label" parent="Etiquetas"]
+[node name="mensaje_final" type="Label" parent="Fondo/Etiquetas"]
 offset_left = 4488.0
 offset_top = -131.0
 offset_right = 4928.0
@@ -499,7 +499,7 @@ theme_override_font_sizes/font_size = 8
 text = "I see you ready for the next level"
 horizontal_alignment = 1
 
-[node name="mensaje_final2" type="Label" parent="Etiquetas"]
+[node name="mensaje_final2" type="Label" parent="Fondo/Etiquetas"]
 offset_left = 4293.0
 offset_top = -246.0
 offset_right = 4733.0
@@ -509,7 +509,7 @@ theme_override_font_sizes/font_size = 8
 text = "Leap of faith"
 horizontal_alignment = 1
 
-[node name="Fantasma_levita" parent="Etiquetas" instance=ExtResource("7_bqp85")]
+[node name="Fantasma_levita" parent="Fondo/Etiquetas" instance=ExtResource("7_bqp85")]
 position = Vector2(3161, -26)
 
 [node name="Main_Character" parent="." instance=ExtResource("1_bk638")]

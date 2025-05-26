@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://d3yql62o06opj"]
+[gd_scene load_steps=5 format=3 uid="uid://d3yql62o06opj"]
 
 [ext_resource type="Script" path="res://scripts/killzone.gd" id="1_0lmv2"]
 [ext_resource type="AudioStream" uid="uid://b4anyo4666lty" path="res://assets/Sounds/Sounds/death.wav" id="2_i723g"]
+[ext_resource type="FontFile" uid="uid://b52reryma4pbd" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_1cmir"]
+[ext_resource type="FontFile" uid="uid://cx0di1ohprr2e" path="res://assets/fonts/PixelOperator8.ttf" id="4_56obk"]
 
 [node name="Killzone" type="Area2D"]
 collision_mask = 2
@@ -16,5 +18,61 @@ stream = ExtResource("2_i723g")
 volume_db = 10.0
 bus = &"Sfx"
 
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
+color = Color(0.201527, 0.201527, 0.201527, 1)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="you_died" type="Label" parent="CanvasLayer"]
+visible = false
+offset_top = 193.0
+offset_right = 1152.0
+offset_bottom = 239.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_1cmir")
+theme_override_font_sizes/font_size = 45
+text = "You Died"
+horizontal_alignment = 1
+
+[node name="death_phrase" type="Label" parent="CanvasLayer"]
+visible = false
+offset_left = 106.0
+offset_top = 289.0
+offset_right = 1043.0
+offset_bottom = 351.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_1cmir")
+theme_override_font_sizes/font_size = 25
+text = "Maybe next time"
+horizontal_alignment = 1
+
+[node name="retry_button" type="Button" parent="CanvasLayer"]
+visible = false
+offset_left = 479.0
+offset_top = 415.0
+offset_right = 657.0
+offset_bottom = 463.0
+theme_override_fonts/font = ExtResource("4_56obk")
+theme_override_font_sizes/font_size = 30
+text = "Retry"
+flat = true
+
+[node name="menu_button" type="Button" parent="CanvasLayer"]
+visible = false
+offset_left = 480.0
+offset_top = 474.0
+offset_right = 656.0
+offset_bottom = 522.0
+theme_override_fonts/font = ExtResource("4_56obk")
+theme_override_font_sizes/font_size = 30
+text = "Menu"
+flat = true
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="CanvasLayer/retry_button" to="." method="_on_retry_pressed"]
+[connection signal="pressed" from="CanvasLayer/menu_button" to="." method="_on_menu_pressed"]
