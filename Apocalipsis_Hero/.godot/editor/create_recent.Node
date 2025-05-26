@@ -1,4 +1,5 @@
 Label
+Node
 CanvasLayer
 Camera2D
 Button
@@ -11,4 +12,3 @@ Node2D
 Area2D
 CollisionPolygon2D
 AnimationPlayer
-Node

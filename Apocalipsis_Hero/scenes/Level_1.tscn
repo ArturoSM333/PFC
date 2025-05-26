@@ -933,11 +933,64 @@ autoplay = "moverse"
 [node name="Star3" parent="Fondo" instance=ExtResource("7_3buo6")]
 position = Vector2(4242, -61)
 
-[node name="Win" type="Label" parent="Fondo"]
+[node name="Etiquetas" type="Node" parent="Fondo"]
+
+[node name="Nice_day" type="Label" parent="Fondo/Etiquetas"]
+offset_left = 185.0
+offset_top = -100.0
+offset_right = 434.0
+offset_bottom = -77.0
+theme_override_colors/font_shadow_color = Color(0.621524, 0.621524, 0.621524, 1)
+theme_override_fonts/font = ExtResource("9_h4f48")
+theme_override_font_sizes/font_size = 8
+text = "It seems that the weather is nice today"
+
+[node name="dodge_jump" type="Label" parent="Fondo/Etiquetas"]
+offset_left = 1128.0
+offset_top = -191.0
+offset_right = 1377.0
+offset_bottom = -168.0
+theme_override_colors/font_shadow_color = Color(0.621524, 0.621524, 0.621524, 1)
+theme_override_fonts/font = ExtResource("9_h4f48")
+theme_override_font_sizes/font_size = 8
+text = "Try to dodge in your jump"
+
+[node name="fall_damage" type="Label" parent="Fondo/Etiquetas"]
+offset_left = 2206.0
+offset_top = -228.0
+offset_right = 2455.0
+offset_bottom = -205.0
+theme_override_colors/font_shadow_color = Color(0.621524, 0.621524, 0.621524, 1)
+theme_override_fonts/font = ExtResource("9_h4f48")
+theme_override_font_sizes/font_size = 8
+text = "Be careful with the fall damage"
+
+[node name="star" type="Label" parent="Fondo/Etiquetas"]
+offset_left = 1899.0
+offset_top = -75.0
+offset_right = 2164.0
+offset_bottom = -52.0
+theme_override_colors/font_shadow_color = Color(0.621524, 0.621524, 0.621524, 1)
+theme_override_fonts/font = ExtResource("9_h4f48")
+theme_override_font_sizes/font_size = 8
+text = "If there is a star it is possible to reach it"
+
+[node name="some_trouble" type="Label" parent="Fondo/Etiquetas"]
+offset_left = 3271.0
+offset_top = -7.0
+offset_right = 3520.0
+offset_bottom = 16.0
+theme_override_colors/font_shadow_color = Color(0.621524, 0.621524, 0.621524, 1)
+theme_override_fonts/font = ExtResource("9_h4f48")
+theme_override_font_sizes/font_size = 8
+text = "This might cause you some trouble"
+
+[node name="Win" type="Label" parent="Fondo/Etiquetas"]
 offset_left = 4667.0
 offset_top = 7.0
 offset_right = 4795.0
 offset_bottom = 30.0
+theme_override_colors/font_shadow_color = Color(0.619608, 0.619608, 0.619608, 1)
 theme_override_fonts/font = ExtResource("9_h4f48")
 theme_override_font_sizes/font_size = 8
 text = "Next Level"
