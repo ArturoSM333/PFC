@@ -1,5 +1,8 @@
+CollisionShape2D
+Area2D
 Label
 Node
+CharacterBody2D
 CanvasLayer
 Camera2D
 Button
@@ -7,8 +10,5 @@ CanvasModulate
 HTTPRequest
 Control
 Sprite2D
-CollisionShape2D
 Node2D
-Area2D
 CollisionPolygon2D
-AnimationPlayer
