@@ -1,8 +1,11 @@
 [gd_scene load_steps=14 format=3 uid="uid://cvtn2ufnmm2rx"]
 
-[ext_resource type="Script" path="res://scripts/fantasma_levita.gd" id="1_73x3m"]
+[ext_resource type="Script" path="res://scripts/diablo.gd" id="1_e1u3l"]
 [ext_resource type="Texture2D" uid="uid://duyut2xw6bvc4" path="res://assets/sprites/LPC imp/walk - vanilla.png" id="2_7j3kv"]
 [ext_resource type="PackedScene" uid="uid://d3yql62o06opj" path="res://scenes/killzone.tscn" id="3_fuawn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_khto1"]
+size = Vector2(20, 40)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_om5yy"]
 atlas = ExtResource("2_7j3kv")
@@ -73,12 +76,20 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_y722x"]
-size = Vector2(15.9531, 36.8594)
-
-[node name="Diablo" type="Node2D"]
+[node name="Diablo" type="CharacterBody2D"]
 top_level = true
-script = ExtResource("1_73x3m")
+collision_layer = 5
+script = ExtResource("1_e1u3l")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("RectangleShape2D_khto1")
+
+[node name="Killzone" parent="." instance=ExtResource("3_fuawn")]
+position = Vector2(0, -0.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("RectangleShape2D_khto1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(3, -4.76837e-07)
@@ -87,12 +98,6 @@ sprite_frames = SubResource("SpriteFrames_2klnb")
 animation = &"attack"
 autoplay = "attack"
 frame_progress = 0.904683
-
-[node name="Killzone" parent="AnimatedSprite2D" instance=ExtResource("3_fuawn")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite2D/Killzone"]
-position = Vector2(-2.5098, -2.06452)
-shape = SubResource("RectangleShape2D_y722x")
 
 [node name="RayCastLeft" type="RayCast2D" parent="."]
 target_position = Vector2(-7, 20)
