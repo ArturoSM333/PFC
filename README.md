@@ -26,7 +26,7 @@
 <br><br>
 
 
-<h2>Índice</h2>
+<h2>🔎 Índice 🔎</h2>
 <br>
 
 * Título e imagen de portada
