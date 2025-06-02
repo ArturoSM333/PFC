@@ -1,7 +1,5 @@
 extends State
 
-
-# Called when the node enters the scene tree for the first time.
 func enter():
 	super.enter()
 	owner.set_physics_process(true)
@@ -12,14 +10,7 @@ func exit():
 	owner.set_physics_process(false)
 
 func transition():
+	var target_pos = player.global_position + Vector2(0, -15)  
+	owner.direction = target_pos - owner.global_position
 	var distance = owner.direction.length()
-	
-	if distance < 30:
-		get_parent().change_state("MeleeAttack")
-	elif distance > 130:
-		var chance = randi() % 2
-		match chance:
-			0:
-				get_parent().change_state("HomingMissile")
-			1:
-				get_parent().change_state("LaserBeam")
+	get_parent().change_state("LaserBeam")

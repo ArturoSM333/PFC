@@ -1,6 +1,7 @@
 extends State
 
 var can_transition : bool = false
+@onready var collision_shape: CollisionShape2D = $"../../CollisionShape2D"
 
 func enter():
 	super.enter()
