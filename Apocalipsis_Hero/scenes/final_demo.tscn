@@ -1,10 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://cduexsyvu68ob"]
+[gd_scene load_steps=3 format=3 uid="uid://cduexsyvu68ob"]
 
 [ext_resource type="FontFile" uid="uid://b52reryma4pbd" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_ymigv"]
+[ext_resource type="Texture2D" uid="uid://51rmjhha4aw8" path="res://assets/sprites/living-tissue-platform-files/PNG/layers/bakground.png" id="2_tqa0b"]
 
 [node name="final_demo" type="Node2D"]
 
 [node name="Label" type="Label" parent="."]
+top_level = true
 offset_left = 179.0
 offset_top = 29.0
 offset_right = 1004.0
@@ -14,6 +16,7 @@ theme_override_font_sizes/font_size = 50
 text = "Congratulations!!!"
 
 [node name="Label4" type="Label" parent="."]
+top_level = true
 offset_left = 407.0
 offset_top = 241.0
 offset_right = 767.0
@@ -22,6 +25,7 @@ theme_override_fonts/font = ExtResource("1_ymigv")
 text = "I hope you had a good time"
 
 [node name="Label5" type="Label" parent="."]
+top_level = true
 offset_left = 472.0
 offset_top = 314.0
 offset_right = 1018.0
@@ -34,6 +38,7 @@ text = "Game created by:
 "
 
 [node name="Label6" type="Label" parent="."]
+top_level = true
 offset_left = 541.0
 offset_top = 423.0
 offset_right = 1087.0
@@ -44,6 +49,7 @@ text = "Suárez
 "
 
 [node name="Label7" type="Label" parent="."]
+top_level = true
 offset_left = 554.0
 offset_top = 469.0
 offset_right = 1100.0
@@ -53,6 +59,7 @@ theme_override_font_sizes/font_size = 8
 text = "Martín"
 
 [node name="Label2" type="Label" parent="."]
+top_level = true
 offset_left = 352.0
 offset_top = 154.0
 offset_right = 824.0
@@ -60,3 +67,15 @@ offset_bottom = 180.0
 theme_override_fonts/font = ExtResource("1_ymigv")
 theme_override_font_sizes/font_size = 25
 text = "You finished the demo"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Bakground" type="Sprite2D" parent="."]
+position = Vector2(289.5, 323.5)
+scale = Vector2(4.03472, 4.47917)
+texture = ExtResource("2_tqa0b")
+
+[node name="Bakground2" type="Sprite2D" parent="."]
+position = Vector2(865, 322.25)
+scale = Vector2(3.98611, 4.49653)
+texture = ExtResource("2_tqa0b")
