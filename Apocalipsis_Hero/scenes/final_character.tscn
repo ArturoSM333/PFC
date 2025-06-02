@@ -27,7 +27,7 @@ const ATTACK_DURATION = 0.4
 var slide = false
 var dodging = false
 var attacking = false
-var health = 3
+var health = 100
 var flashing = false
 
 var slide_timer = 0.0
@@ -39,6 +39,10 @@ var attack_timer = 0.0
 @onready var jump: AudioStreamPlayer2D = $Jump
 @onready var attack: AudioStreamPlayer2D = $Attack
 @onready var attack_area: Area2D = $AttackArea2D
+@onready var timer: Timer = $Timer
+@onready var health_label: Label = $Health
+@onready var boss = get_parent().find_child(\"Final_boss\")
+
 var attack_area_offset = Vector2(20, 0)
 
 func _ready() -> void:
@@ -158,14 +162,15 @@ func _on_attack_body_entered(body: Node) -> void:
 	if attacking and body.has_method(\"take_damage\"):
 		print(\"Entró un cuerpo:\", body.name)
 		print(\"Aplicando daño al personaje\")
-		body.take_damage(1)
+		body.take_damage()
 
 
 # NUEVO: Daño recibido del enemigo
-func take_damage(amount: int) -> void:
+func take_damage():
 	if flashing or health == 0:
 		return
-	health -= amount
+	health -= 20
+	health_label.text = str(health) + \"/100\"
 	flash_red()
 	if health <= 0:
 		die()
@@ -178,13 +183,13 @@ func flash_red() -> void:
 	flashing = false
 
 func die() -> void:
-	animated_sprite.play(\"die\")
-	set_physics_process(false)
-	$CollisionShape2D.disabled = true
-	
-	var killzone = get_node(\"/root/MainScene/Killzone\") # Cambia la ruta a la killzone real
-	if killzone:
-		killzone.trigger_death_screen()
+	Engine.time_scale = 0.5
+	timer.start()
+
+
+func _on_timer_timeout() -> void:
+	get_tree().reload_current_scene()
+	Engine.time_scale = 1
 "
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rihjm"]
@@ -942,4 +947,8 @@ volume_db = 10.0
 pitch_scale = 0.97
 bus = &"Sfx"
 
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
 [connection signal="area_entered" from="AttackArea2D" to="." method="_on_attack_area_2d_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

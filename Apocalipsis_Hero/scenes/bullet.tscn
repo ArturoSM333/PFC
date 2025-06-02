@@ -1,0 +1,71 @@
+[gd_scene load_steps=11 format=3 uid="uid://cp45575h1fwjm"]
+
+[ext_resource type="Texture2D" uid="uid://dekfp03difbi8" path="res://assets/sprites/Mecha-stone Golem 0.1/Mecha-stone Golem 0.1/weapon PNG/arm_projectile_glowing.png" id="1_5u3aw"]
+[ext_resource type="Script" path="res://scripts/bullet.gd" id="1_8ehrj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70ogu"]
+atlas = ExtResource("1_5u3aw")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xr7jt"]
+atlas = ExtResource("1_5u3aw")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_efjcw"]
+atlas = ExtResource("1_5u3aw")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxwj5"]
+atlas = ExtResource("1_5u3aw")
+region = Rect2(0, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ihrk8"]
+atlas = ExtResource("1_5u3aw")
+region = Rect2(100, 100, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ttmqs"]
+atlas = ExtResource("1_5u3aw")
+region = Rect2(200, 100, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x6by0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_70ogu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xr7jt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_efjcw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxwj5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ihrk8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ttmqs")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j62ap"]
+size = Vector2(34, 12)
+
+[node name="bullet" type="Area2D"]
+top_level = true
+script = ExtResource("1_8ehrj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_x6by0")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(28, -13)
+shape = SubResource("RectangleShape2D_j62ap")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
