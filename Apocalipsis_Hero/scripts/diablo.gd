@@ -26,11 +26,11 @@ func _on_attack_area_entered(area: Area2D) -> void:
 		print("Enemigo golpea a:", target.name)
 		target.take_damage(1)
 
-func take_damage(amount: int) -> void:
+func take_damage():
 	if flashing:
 		return
 
-	health -= amount
+	health -= 1
 	print("Vida restante del enemigo:", health)
 	flash_red()
 
