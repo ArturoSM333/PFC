@@ -6,8 +6,8 @@
 <br>
 <div align="center">
 <p float="left">
-  <a href="https://www.youtube.com/watch?v=LOhfqjmasi0" target="_blank">
-     <img src="https://img.youtube.com/vi/LOhfqjmasi0/0.jpg" width="400" alt="Ver video en YouTube" />
+  <a href="https://www.youtube.com/watch?v=s06InEVc6f4" target="_blank">
+     <img src="https://img.youtube.com/vi/s06InEVc6f4/0.jpg" width="400" alt="Ver video en YouTube" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="https://github.com/user-attachments/assets/b0632b45-73b0-4c48-947a-a0a8bbc5748b" width="300" alt="Apocalipsis_Hero_Icon" />
